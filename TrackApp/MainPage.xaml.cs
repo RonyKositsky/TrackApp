@@ -6,6 +6,9 @@ public partial class MainPage : ContentPage
 
 	public MainPage()
 	{
+		CSVTranslator csv = new CSVTranslator(0, 1, @"C:\Users\rkositsky\Downloads\Test.xlsx");
+		csv.ReadCSV();
+
 		InitializeComponent();
 	}
 
